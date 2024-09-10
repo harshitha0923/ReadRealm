@@ -1,0 +1,5 @@
+mysql_host: '164.90.137.194'
+mysql_user: 'hab213'
+mysql_password: 'InfSci2710_4672552'
+mysql_db: 'readrealm'
+mysql_port: 3306

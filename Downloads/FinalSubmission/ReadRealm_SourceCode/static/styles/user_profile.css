@@ -1,0 +1,221 @@
+.book-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background-color: #f0f4f8; /* Very light blue */
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.book-details {
+    flex-grow: 1;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-action {
+    background-color: transparent;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 1rem; /* Adjust size as needed */
+    line-height: 1;
+}
+
+.btn-action.remove {
+    color: #ff6347; /* Tomato color for remove button */
+}
+
+.btn-action.add {
+    color: #2ecc71; /* Emerald color for add button */
+}
+
+.btn-action:hover {
+    opacity: 0.8;
+}
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #cfd9df 25%, #e2ebf0 100%);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column; /* Direct children to layout in a column */
+            justify-content: flex-start; /* Align children to the start of the main axis */
+            align-items: center; /* Center children on the cross axis */
+            min-height: 100vh;
+        }
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #2C3E50; /* Updated color: a deep, muted blue */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.body-padding {
+    padding-top: 60px; /* Add this class to the body to prevent overlap */
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between; /* This will separate the logo and nav links */
+    align-items: center;
+    padding: 0 20px;
+    max-width: 1200px;
+    width: 100%; /* Ensure full width */
+    margin: 0 auto; /* Center the navigation */
+}
+
+
+
+.nav-logo {
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #ECF0F1; /* Light color for contrast */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px; /* Or adjust as needed */
+    padding: 0; /* Remove padding to avoid white spaces */
+}
+
+
+.nav-links li a {
+    text-decoration: none;
+    color: #ECF0F1; /* Same light color for the text */
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #3498DB; /* A bright blue for hover state */
+}
+
+.nav-links li a.btn {
+    background-color:#2C3E50; /* Make buttons transparent */
+    padding: 10px 15px;
+    margin: 0; /* Ensure no margin is causing spacing issues */
+    border-radius: 0px;
+    border: none;
+}
+
+.nav-links li a.btn:hover {
+    background-color: #3498DB; /* A bright blue for hover state */
+    color: #ffffff;
+}
+
+        h2, h3 {
+            text-align: center;
+            color: #334e68; /* Dark blue */
+            margin: 20px 0;
+            font-weight: 600;
+        }
+        p, li {
+            font-size: 16px;
+            color: #627d98; /* Soft blue */
+            line-height: 1.6;
+        }
+        strong {
+            color: #102a43; /* Darker blue */
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background-color: #f0f4f8; /* Very light blue */
+            margin-bottom: 10px;
+            padding: 12px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            display: flex;
+            align-items: center;
+        }
+        li:hover {
+            background-color: #dbe2ef; /* Light blue */
+        }
+        li i {
+            margin-right: 10px;
+            color: #9fb3c8; /* Icon color */
+        }
+        .btn {
+            display: inline-block;
+            background-color: #3f51b5;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            margin-bottom: 20px;
+        }
+        .btn:hover {
+            background-color: #293241;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .main-content {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 30px; /* Space between navbar and profile container */
+}
+
+.profile-container {
+    background: #ffffffe6; /* Slightly transparent white */
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(5px);
+    margin: auto; /* Center the container */
+}
+
+/* Existing styles... */
+
+.button-container {
+    display: flex;
+    justify-content: center; /* This centers the buttons horizontally inside the container */
+    align-items: center; /* This will vertically center items if needed */
+    margin: 20px 0; /* Add consistent margin to the top and bottom */
+}
+.follower-stats {
+    display: flex;
+    gap: 20px; /* Adjust the space between follower and following counts */
+    justify-content: center; /* Center the stats horizontally */
+    align-items: center; /* Align items vertically */
+    font-size: 0.9em; /* Adjust font size as needed */
+    margin-top: 10px; /* Space from the profile title */
+    color: #334e68; /* Dark blue, you can use your color theme */
+    font-weight: 600; /* Makes text bold */
+}
+
+.follower-stats i {
+    margin-right: 5px; /* Space between icon and text */
+}
+
+/* Styles for individual follower/following items */
+.follower-stats span {
+    background: #f0f4f8; /* Very light blue background */
+    border-radius: 20px; /* Rounded corners */
+    padding: 8px 16px; /* Padding inside the stats items */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    display: flex;
+    align-items: center;
+}
+
+.follower-stats span i {
+    color: #5c6bc0; /* Adjust icon color as needed */
+}
