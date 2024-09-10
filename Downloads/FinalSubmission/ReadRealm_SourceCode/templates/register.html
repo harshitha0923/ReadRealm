@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | ReadRealm</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='styles/register.css') }}" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/js-sha256@0.11.0/src/sha256.min.js"></script>
+    <script src="{{url_for('static', filename='scripts/registerScript.js')}}"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Register for ReadRealm</h2>
+        {% if error %}
+        <div style="color: red;">{{ error }}</div>
+        {% endif %}
+
+        <form naem= "regForm" action="/register" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Your unique username" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your email address" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Create a password" required>
+            
+            <label for="bio">Bio (optional):</label>
+            <textarea id="bio" name="bio" placeholder="Tell us about yourself"></textarea>
+            
+            <button type="submit"><i class="fas fa-user-plus"></i> Register</button>
+        </form>
+    </div>
+</body>
+</html>
