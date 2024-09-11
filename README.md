@@ -94,7 +94,3 @@ ReadRealm/
 - **HTML/CSS/JavaScript**: Frontend technologies
 - **YAML**: For database configuration
 - **SQL**: For database schema
-
-## Contributing
-
-Feel free to contribute to this project by forking the repository and submitting pull requests.
